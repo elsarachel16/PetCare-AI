@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PetCare AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="shell">
+    <nav class="rail" aria-label="Main">
+      <div class="brand">
+        <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true">
+          <circle cx="9" cy="13" r="3.2"/><circle cx="16" cy="9" r="3.2"/><circle cx="23" cy="13" r="3.2"/>
+          <path d="M16 15c-4.5 0-8 3.6-8 6.6 0 2.2 1.8 3.4 4 3.4 1.5 0 2.6-.6 4-.6s2.5.6 4 .6c2.2 0 4-1.2 4-3.4 0-3-3.5-6.6-8-6.6z"/>
+        </svg>
+        <span>PetCare AI</span>
+      </div>
+      <ul class="nav" id="nav">
+        <li><button data-view="today">Today</button></li>
+        <li><button data-view="plan">Care plan</button></li>
+        <li><button data-view="ask">Ask PetCare AI</button></li>
+        <li><button data-view="pets">My pets</button></li>
+        <li><button data-view="reminders">Reminders</button></li>
+        <li><button data-view="reports">Reports</button></li>
+      </ul>
+    </nav>
+    <main id="view" tabindex="-1"></main>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
